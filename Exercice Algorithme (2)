@@ -1,0 +1,654 @@
+Exercice 1 :
+
+algorithme nbre-char ;
+
+var Mot Char
+var N Int
+Debut
+Ecrire("Entrez un mot : ");
+Lire(Mot);
+N = Len(Mot);
+Ecrire(Mot" est composé de "N" lettres");
+Fin
+
+Exercice 2 :
+
+var Mot1 Char;
+var Mot2 Char;
+var Mot3 Char;
+Debut
+Ecrire("Donnez Mot1 : ");
+Ecrire("Donnez Mot2 : ");
+Ecrire("Donnez Mot3 : ");
+Lire(Mot1);
+Lire(Mot2);
+Lire(Mot3);
+var Mot Char = strcat(Mot1, Mot2, Mot3);
+Ecrire("Les mots "Mot3);
+Fin
+
+Exercice 3 :
+
+var phrase Char;
+var N, poz Int;
+Debut
+Ecrire("Donner la phrase");
+Lire(phrase);
+Ecrire("Donner le rang du caractere");
+Lire(poz);
+Ecrire("Donner le nombre de caracteres à supprimé");
+Lire(N);
+delete(phrase ,(phrase, poz, N));
+Ecrire(phrase);
+Fin
+
+Exercice 4 :
+
+var Bonjour Char;
+var N, poz Int;
+Debut
+Ecrire("Donner le mot");
+Lire(Bonjour);
+Ecrire("Donner le rang du caractere u");
+poz = 4;
+Lire(4);
+Ecrire("Donner le nombre de caracteres à affiché");
+N = 1;
+Lire(1);
+Ecrire(Affichage(Bonjour, (Bonjour, 4, 1)));
+Fin
+
+Exercice 5 :
+
+Algorithme Successeur
+
+var c Char;
+Debut
+Ecrire("Donner un caractère :");
+Lire(c);
+Ecrire(succ(c));
+Fin
+
+Exercice 6 :
+
+Algorithme Majuscule
+
+var c Char;
+Debut
+Ecrire("Donner un caractère :");
+Lire(c);
+Ecrire(majus(c));
+Fin
+
+Exercice 7 :
+
+Algorithme Pair_Impair
+
+var n Int;
+var m int;
+Dabut
+Ecrire("Donner le nombre :");
+Lire(n)
+m == n mod 2;
+Si(m == 0) Alors
+Ecrire(c, " est pair");
+Sinon
+Ecrire (c, " est impair");
+Fin Si
+Fin
+
+Eexercice 8 :
+
+Algorithme test
+
+var x Int;
+var y Int;
+var z Int;
+
+Debut
+Ecrire(Donner les nombres :");
+Lire(x, y, z);
+Si(x = y + z OU y = x + z OU z = x + y)
+Alors Ecrire("Teste positif");
+Sinon Ecrire("Teste negatif");
+Fin Si
+Fin
+
+Exercice 9 :
+
+Algorithme POZ_NEG
+
+var n Int;
+
+Debut
+Ecrire(Donner les nombres :");
+Lire(n);
+Si(n >= 0)
+Alors Ecrire(n, " est positif");
+Sinon Ecrire(n, " est negatif");
+Fin Si
+Fin
+
+Exercice 10 :
+
+Algorithme Max
+
+var x Int;
+var y Int;
+
+Debut
+Ecrire(Donner les nombres :");
+Lire(x, y);
+Si(x > y)
+Alors Ecrire(x);
+Sinon Ecrire(y);
+Fin Si
+Fin
+
+Exercice 11 :
+
+Algorithme Âge
+
+var x Int;
+
+Debut
+Ecrire(Donner l'âge de l'enfant :");
+Lire(x);
+Si(x > 6 ET x < 7)
+Alors Ecrire("Poussin");
+Sinon 
+Si(x > 8 ET x < 9)
+Alors Ecrire("Pupille");
+Sinon 
+Si(x > 10 ET x < 11)
+Alors Ecrire("Minime");
+Sinon
+Si(x > 12)
+Alors Ecrire("Cadet");
+Fin Si
+Fin
+
+Exercice 12 :
+
+Algorithme Note
+
+var x Int;
+
+Debut
+Ecrire(Donner la note :");
+Lire(x);
+Si(x < 10)
+Alors Ecrire("Redoublé");
+Sinon 
+Si(x < 13)
+Alors Ecrire("Passable");
+Sinon 
+Si(x < 15)
+Alors Ecrire("Assez Bien");
+Sinon
+Si(x < 17)
+Alors Ecrire("Bien");
+Sinon
+Ecrire("Très Bien");
+Fin Si
+Fin
+
+Exercice 13 :
+
+Algorithme Temps
+
+var H Int;
+var M Int;
+var N Int;
+
+Debut
+Ecrire("Donnez l'heure");
+Lire(H);
+Ecrire("Donnez les minutes");
+Lire(M);
+N = M + 1;
+Ecrire("Dans une minute, il sera "H" heure(s) "N);
+Fin
+
+Exercice 14 :
+
+Algorithme Impôt
+
+var S Char;
+Var A Int;
+
+Debut
+Ecrire("Donnez le sex ");
+Lire(S);
+Ecrire("Donnez l'âge ");
+Lire(A);
+Si((S = homme ET A > 20) OU (S = femme ET A > 18 ET A < 35))
+Alors
+Ecrire("L'habitant est imposable");
+Sinon
+Ecrire("L'habitant n'est pas imposable");
+Fin Si;
+Fin
+
+Exercice 15 :
+
+Algorithme Année
+
+var N Int;
+
+Debut
+Ecrire("Donnez le nombre de jours");
+Lire(N);
+Si((N div 4 ET N mod 4) OU (N div 400))
+Alors 
+Ecrire("L'année est bissextile")
+Sinon
+Ecrire("L'année n'est pas bissextile");
+Fin Si;
+Fin
+
+Exercice 16 :
+
+Algorithme Note
+
+var x Int;
+
+Debut
+Ecrire(Donner le chiffre entre 1 et 7);
+Lire(x);
+Si(x = 1)
+Alors Ecrire("Lundi");
+Sinon 
+Si(x = 2)
+Alors Ecrire("Mardi");
+Sinon 
+Si(x = 3)
+Alors Ecrire("Mercredi");
+Sinon
+Si(x = 4)
+Alors Ecrire("Jeudi");
+Sinon
+Si(x = 5)
+Alors Ecrire("Vendredi");
+Sinon
+Si(x = 6)
+Alors Ecrire("Samedi");
+Sinon
+Ecrire("Dimanche");
+Fin Si
+Fin
+
+Exercice 17 :
+
+Algorithme Année
+
+var x,y,z Float;
+
+Debut
+Ecrire("Donnez les nombres");
+Lire(x, y);
+z = x - y;
+Si(z > 0)
+Alors
+Ecrire(z);
+Sinon
+Ecrire(-z);
+Fin Si;
+Fin
+
+Exercice 18 :
+
+Algorithme Demande
+
+var n Int
+
+Debut
+Ecrire("Donner un nombre");
+Lire(n);
+tant que (n<1 et n>3) faire
+Ecrire("Donner un autre nombre");
+Lire(n);
+fin tant que
+Ecrire(n);
+fin
+
+Exercice 19 :
+
+Algorithme Pti_Gr
+
+var n Int
+
+Debut
+Ecrire("Donner un nombre");
+Lire(n);
+Tant que (n<10 et n>20) faire
+Si(n<10) alors
+Ecrire("Donner un nombre plus grand");
+Lire(n);
+Sinon
+Ecrire("Donner un nombre plus petit");
+Lire(n);
+Fin Si
+Fin tant que
+Ecrire(n);
+Fin
+
+Exercice 20 :
+
+Algorithme Dix_NBR
+
+var n,i Int;
+Debut
+Ecrire("donner un nombre")
+Lire(n)
+Pour i de n+1 à n+10 faire
+Ecrire(i)
+Fin Pour
+Fin
+
+Exercice 21 :
+
+Algorithme Clac
+
+var n,i Int;
+Debut
+Ecrire("donner un nombre")
+Lire(n)
+Pour i de 0 à n-1 faire
+i=i+1
+Ecrire(i)
+Fin Pour
+Fin
+
+Exercice 22 :
+
+Algorithme Fact
+
+var n,i,x Int;
+Debut
+Ecrire("donner un nombre")
+Lire(n)
+x=1
+Pour i de 1 à n faire
+x=x*i
+Ecrire(i)
+Fin Pour
+Fin
+
+Exercice 23 :
+
+Algorithme Grand
+
+var G, i, n, P Int
+Debut
+G = 0
+Pour i de 1 à 20
+Ecrire("donner le nombre")
+Lire(n)
+Si (i = 1 OU n > G)
+Alors
+G=n
+P=i
+Fin Si
+Fin Pour
+Ecrire("le nombre le plus grand est "G" et sa position est "P)
+Fin
+
+Exercice 24 :
+
+Algorithme Athlete
+
+var i Int
+var n1, n2 Char
+Debut
+Ecrire("donner un nom")
+Lire(n1)
+Ecrire("donner un nom")
+Lire(n2)
+Tant que(n1<>n2)
+n1=n2
+Ecrire("donner un nom")
+Lire(n2)
+i=i+1
+Fin Tant que
+Ecrire("le nombre des athletes : "i)
+Fin
+
+Exercice 25 :
+
+Algorithme Moy-Generale
+
+var i Int
+var M, Moy Float
+
+Debut
+Moy=0
+Pour i de 1 à 30
+Ecrire("Donnez la moyenne de l'éléve")
+Lire(M)
+Moy= Moy+M
+Fin Pour
+Ecrire("La moyenne generale est " Moy div 30)
+Fin
+
+Exercice 26 :
+
+Debut
+
+Tantque(N1>=0 et N2>=0)
+
+Ecrire("Donner le nombre")
+Lire(N1)
+Som = N1
+Ecrire("Donner le nombre")
+Lire(N2)
+Si(N1>N2)
+Max = N1
+Min = N2
+Sinon
+Max = N2
+Min = N1
+Som = Som + N2
+
+Fin Tantque
+
+Ecrire("Le nombre max est "Max" le nombre min est "Min" la somme est "Som)
+Fin
+
+Exercice 27 :
+
+var M, S, i, Int
+var X booleen
+Debut
+Tantque(X=O)
+Ecrire("Donner l'âge")
+Lire(M)
+S=S+M
+Ecrire("Encore une autre personne (O/N) ?")
+Lire(X)
+i=i+1
+Fin Tantque
+Ecrire("La moyenne d’âges est "S/i)
+Fin
+
+Exercice 28 :
+
+var T:Tab, Som Float
+var i Int
+Debut
+Som=0
+Pour i de 1 à 5
+Ecrire("T["i"]=")
+Lire(T[i])
+Som=Som+T[i]
+Fin Pour
+Ecrire("La somme du tableau est "Som)
+Fin
+
+Exercice 29 :
+
+var T:Tab, Som, Moy, Pro Float
+var i Int
+Debut
+Som=0
+Pro=1
+Moy=0
+Pour i de 1 à n
+Ecrire("T["i"]=")
+Lire(T[i])
+Som=Som+T[i]
+Pro=Pro*T[i]
+Fin Pour
+Moy=Som div n
+Fin
+
+Exercice 30 :
+
+
+var T:Tab Float
+var i Int
+Debut
+Pour i de 1 à 7
+Ecrire("T["i"]=")
+Lire(0)
+Fin Pour
+Fin
+
+Exercice 31 :
+
+var T:Tab Char
+var i Int
+Debut
+Pour i de 1 à 6
+Ecrire("T["i"]=")
+Lire(T[i])
+Fin Pour
+Fin
+
+Exercice 31 + 33 :
+
+var T:Tab, X, Y Float
+var i Int
+Debut
+X=0
+Pour i de 1 à 9
+Ecrire("Donner la note T["i"]")
+Lire(T[i])
+------------------- Exercice 33
+X=X+T[i]
+Fin Pour
+Y=X div 9
+Ecrire("La moyenne des notes est "Y)
+Fin
+
+Exercice 32 :
+
+l'algorithme produit un tableau Nb(i) qui contient les nembres : 0, 1, 4, 9, 16, 25.
+
+Exercice 34 :
+
+Debut
+var T[] Int;
+Ecrire("Donnez un nombre")
+Lire(T[n])
+Si(T[n]>0) Alors
+Ecrire("La valeur negative est "-T[n]" et la valeur positive est "T[n])
+Sinon
+Ecrire("La valeur negative est "T[n]" et la valeur positive est "-T[n])
+Fin Si
+Fin
+
+Exercice 35 :
+
+var T[], i, N, X Int
+Debut
+X=0
+Tantque(T[i]<N)
+Faire
+X=X+T[i]
+i=i+1
+Fin Tantque
+Ecrire("La somme des valeurs du tableau est "X)
+Fin
+
+
+Exercice 36 :
+
+var i, T[], T1[], T2[] Int
+Debut
+Pour i de 1 à n
+T[i]=T1[i]+T2[i]
+Fin Pour
+Fin
+
+Exercice 37 :
+
+var T[], i, j, n, m Int
+Debur
+X=0
+For i de 1 à n
+For j de 1 à m
+X=X+T[i]*T[j]
+Fin Pour
+Fin Pour
+Fin
+
+Exercice 38 :
+
+var T[], N, n, i Int
+Debut
+Ecrire("Donnez un nombre")
+Ecrire(N)
+Pour i de 1 à n
+Si (T[i]=N)
+T[i]=T[i]+1
+Fin Si
+Ecrire(T[i])
+Fin Pour
+Fin
+
+Exercice 39 :
+
+var T[], X, n, i Int
+Debut
+Pour i de 1 à n
+Ecrire("Donnez la valeur")
+Ecrire(T[i])
+Fin Pour
+X=T[1]
+Pour i de 2 à n
+Si(T[i]>X)
+X=T[i]
+Fin Pour
+Ecrire("La plus grande valeur du tableau est "X)
+Fin
+
+Exercice 40 :
+
+var T[], X, Y, Z n, i Int
+Debut
+Y=0
+Pour i de 1 à n
+Ecrire("Donnez la note")
+Ecrire(T[i])
+Y=Y+T[i]
+Fin Pour
+X=0
+Z=Y div n
+Pour i de 1 à n
+Si(T[i]>Z)
+X=X+1
+Fin Pour
+Ecrire("Le nombre des notes supérieures à la moyenne de la classe est "X)
+Fin
+
+
+
+
+
+
+
+
+
+
+
